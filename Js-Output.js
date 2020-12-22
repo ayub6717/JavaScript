@@ -12,3 +12,5 @@ alert(19+3);
 console.log(21+22);
 
 window.print();
+
+console.log(12+4);
