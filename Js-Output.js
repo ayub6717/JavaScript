@@ -11,4 +11,4 @@ alert(19+3);
 // Using console.log()
 console.log(21+22);
 
-window.print();
+// window.print();
