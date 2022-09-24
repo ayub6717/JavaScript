@@ -35,4 +35,9 @@ function show(){
 
 searchInput.addEventListener("keyup", show)
 
+// Ternary operator
 
+var age = 19;
+var life = age>= 18 ? "adult" : age < 10 ? "child" : "young";
+
+console.log(life);
