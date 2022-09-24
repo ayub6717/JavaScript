@@ -75,17 +75,16 @@
 // let strr = 'Apple, banana, kola';
 // console.log(strr.indexOf('banana'));
 
-const rohan = ["banana","amm","apple","noodlse","peyara"]
-// rohan.push("Lemon");
+//  // rohan.push("Lemon");
 // rohan[3] = "seemon";
 // let len = rohan.length;
 
 // let text = "<select>"
 
 // for (let index = 0; index <len; index++) {
-    
+
 //     text += "<option>" + rohan[index] + "</option>";
-    
+
 // }
 // let text += "</select>";
 // console.log(text);
@@ -104,7 +103,7 @@ const rohan = ["banana","amm","apple","noodlse","peyara"]
 
 
 
-const items = ['rohan','afnan','samia','monalisa','tuha','juhan','mostafa kamal','nurjahan','baby','hannan','mishba','shoumik','sifat','nasima','kianu','zakir','faruq','momotaz'];
+const items = ['rohan', 'afnan', 'samia', 'monalisa', 'tuha', 'juhan', 'mostafa kamal', 'nurjahan', 'baby', 'hannan', 'mishba', 'shoumik', 'sifat', 'nasima', 'kianu', 'zakir', 'faruq', 'momotaz'];
 
 let text = "<ul>";
 items.forEach(showed);
@@ -115,21 +114,99 @@ function showed(element) {
 }
 document.getElementById("item").innerHTML = text;
 
-    $(".expand").click(function(){
-        var el = $('.parrent');
-        var curHeight = $('.parrent').height();
+// $(".expand").click(function(){
+//     var el = $('.parrent');
+//     var curHeight = $('.parrent').height();
+//     console.log(curHeight == 200);
+
+//     if(curHeight == 200){
+//         let autoHeight = el.css('height', 'auto').height();
+//         el.height(curHeight).animate({height: autoHeight}, 1000);
+//         $(".expand").text("see less")
+//         console.log("a");
+//     }
+//     else{
+//         let autoHeight = el.css('height', '200px').height();
+//         el.height(curHeight).animate({height: autoHeight}, 1000);
+//         $(".expand").text("see more");
+//         console.log("b");
+//     }
+// });
 
 
-        if(curHeight == 200){
-            let autoHeight = el.css('height', 'auto').height();
-            el.height(curHeight).animate({height: autoHeight}, 1000);
-            $(".expand").text("see less")
-            console.log("a");
-        }
-        else{
-            let autoHeight = el.css('height', '200px').height();
-            el.height(curHeight).animate({height: autoHeight}, 1000);
-            $(".expand").text("see more");
-            console.log("b");
-        }
-    });
+
+
+let button = document.querySelector('.expand');
+let msg = document.querySelector('.parrent');
+
+button.addEventListener('click', ()=>{
+    let curHeight = msg.offsetHeight;
+    if (curHeight <= 200) {
+        console.log("a");
+        msg.classList.remove('h-200');
+        msg.classList.add('h-auto','animate');
+        button.innerText = "see less"
+    } else {
+        console.log("b");
+        msg.classList.add('h-200');
+        msg.classList.remove('h-auto');
+        button.innerText = "see more"
+    }
+})
+
+{
+
+    document.body.style.setProperty("--calc-height", "auto");
+  
+    const
+          calcTargets = document.getElementsByClassName("calcChildSize"),
+          resize = () => {
+              for (let target of calcTargets) {
+                  let size = target.firstElementChild.clientHeight + "px";
+                  if (target.style.getPropertyValue("--calc-height") !== size) {
+                      target.style.setProperty("--calc-height", size);
+                  }
+              }
+          };
+  
+    window.addEventListener("resize", resize);
+    window.addEventListener("load", resize);
+  
+  }
+
+
+// var button = document.querySelector(".expand")
+// var msg = document.querySelector(".parrent")
+//     button.addEventListener('click', ()=>{
+//     let curHeight = msg.offsetHeight;
+//     if (curHeight == 200) {
+//         document.querySelector('.parrent').classList.remove("h-200")
+//         document.querySelector('.parrent').classList.add("h-auto")
+//         document.getElementsByClassName("expand").innerText = "see less"
+//         console.log("a");
+//     } else {
+//         msg.classList.add("h-200")
+//         msg.classList.remove("h-auto")
+//         console.log("b");
+//     }
+// })
+
+
+// document.querySelector(".expand").click(function(){
+//     var el = document.querySelector('.parrent');
+//     var curHeight = document.querySelector('.parrent').height();
+
+
+//     if(curHeight == 200){
+//         let autoHeight = el.css('height', 'auto').height();
+//         el.height(curHeight).animate({height: autoHeight}, 1000);
+//         document.querySelector(".expand").text("see less")
+//         console.log("a");
+//     }
+//     else{
+//         let autoHeight = el.css('height', '200px').height();
+//         el.height(curHeight).animate({height: autoHeight}, 1000);
+//         document.querySelector(".expand").text("see more");
+//         console.log("b");
+//     }
+// });
