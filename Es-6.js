@@ -41,3 +41,11 @@ var age = 19;
 var life = age>= 18 ? "adult" : age < 10 ? "child" : "young";
 
 console.log(life);
+
+// array find method
+let lostMoney = [1,2,3,4,5,6,7,8,9];
+var result_show = lostMoney.find((deposite_money) => {
+   return (deposite_money>4);
+
+});
+console.log(result_show);
