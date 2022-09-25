@@ -66,6 +66,11 @@ var resut_slice = lostMoney.slice(1, 5);
 // array splice method
 var resut_splice = lostMoney.splice(1, 3, 10, 20, 30);
 
+// array concat method
+var hack_money = [12,16,23,21,33,50];
+var white_money = [11,17,24,29,34,52];
+var resut_concat = lostMoney.concat(hack_money,white_money);
+
 
 
 console.log(result_show);
@@ -74,3 +79,4 @@ console.log(resut_shown);
 console.log(lostMoney);
 console.log(resut_slice);
 console.log(resut_splice);
+console.log(resut_concat);
