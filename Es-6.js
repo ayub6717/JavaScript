@@ -62,8 +62,15 @@ var resut_shown = lostMoney.filter((deposite_money, index, arr) => {
 
 // array slice method
 var resut_slice = lostMoney.slice(1, 5);
+
+// array splice method
+var resut_splice = lostMoney.splice(1, 3, 10, 20, 30);
+
+
+
 console.log(result_show);
 console.log(result_showed);
 console.log(resut_shown);
 console.log(lostMoney);
 console.log(resut_slice);
+console.log(resut_splice);
