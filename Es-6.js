@@ -121,5 +121,17 @@ console.log(values);
 var entries =  Object.entries(myObj);
 console.log(entries);
 
+//spread operator
+var spread = [1,2,3,4,5,6,7,8,9];
+var spread2 = [11,12,13,14,15,16,17,18,19];
+
+var copy_spread = [...spread];
+console.log(copy_spread);
+
+var copy_spread2 = [...spread,...spread2];
+console.log(copy_spread2);
+
+
+
 
 
