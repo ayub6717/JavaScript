@@ -44,39 +44,45 @@ console.log(life);
 
 // array find method
 let lostMoney = [1,2,3,4,5,6,7,8,9];
-var result_show = lostMoney.find((deposite_money) => {
+var result_find = lostMoney.find((deposite_money) => {
    return (deposite_money>4);
-
 });
+console.log(result_find);
+
 
 // array findIndex method
-var result_showed = lostMoney.findIndex((deposite_money) => {
+var findIndex = lostMoney.findIndex((deposite_money) => {
    return (deposite_money>6);
-
 });
+console.log(findIndex);
+
 
 // array filter method
-var resut_shown = lostMoney.filter((deposite_money, index, arr) => {
+var resut_filter = lostMoney.filter((deposite_money, index, arr) => {
     return (deposite_money>6);
 })
+console.log(resut_filter);
+
 
 // array slice method
 var resut_slice = lostMoney.slice(1, 5);
+console.log(lostMoney);
+console.log(resut_slice);
 
 // array splice method
 var resut_splice = lostMoney.splice(1, 3, 10, 20, 30);
+console.log(lostMoney);
+console.log(resut_splice);
+
 
 // array concat method
 var hack_money = [12,16,23,21,33,50];
 var white_money = [11,17,24,29,34,52];
 var resut_concat = lostMoney.concat(hack_money,white_money);
-
-
-
-console.log(result_show);
-console.log(result_showed);
-console.log(resut_shown);
-console.log(lostMoney);
-console.log(resut_slice);
-console.log(resut_splice);
 console.log(resut_concat);
+
+
+// array push method
+var resut_push = white_money.push(44,55,66,77);
+console.log(white_money);
+console.log(resut_push);
