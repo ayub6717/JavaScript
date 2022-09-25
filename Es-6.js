@@ -48,4 +48,11 @@ var result_show = lostMoney.find((deposite_money) => {
    return (deposite_money>4);
 
 });
+
+// array findIndex method
+var result_showed = lostMoney.findIndex((deposite_money) => {
+   return (deposite_money>6);
+
+});
 console.log(result_show);
+console.log(result_showed);
