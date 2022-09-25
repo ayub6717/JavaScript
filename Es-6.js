@@ -54,5 +54,11 @@ var result_showed = lostMoney.findIndex((deposite_money) => {
    return (deposite_money>6);
 
 });
+
+// array filter method
+var resut_shown = lostMoney.filter((deposite_money, index, arr) => {
+    return (deposite_money>6);
+})
 console.log(result_show);
 console.log(result_showed);
+console.log(resut_shown);
