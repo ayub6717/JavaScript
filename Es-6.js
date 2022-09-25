@@ -95,3 +95,31 @@ var map_result = map.map((num) => {
 });
 console.log(map_result);
 
+// array reduce method
+var reduce_array = [1,2,3,4,5,6];
+var map_reduce = reduce_array.reduce((prevValue, currValue) => {
+    return prevValue+currValue;
+},0);
+console.log(map_reduce);
+
+// for in
+
+const myObj = {
+    name: "rohan",
+    age: "26",
+    dob: "1996",
+};
+
+for(property in myObj){
+    console.log(property);
+}
+
+var keys =  Object.keys(myObj);
+console.log(keys);
+var values =  Object.values(myObj);
+console.log(values);
+var entries =  Object.entries(myObj);
+console.log(entries);
+
+
+
