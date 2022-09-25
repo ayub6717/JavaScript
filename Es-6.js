@@ -86,3 +86,12 @@ console.log(resut_concat);
 var resut_push = white_money.push(44,55,66,77);
 console.log(white_money);
 console.log(resut_push);
+
+// array map method
+
+var map = [1,2,3,4,5,6];
+var map_result = map.map((num) => {
+    return 2*num;
+});
+console.log(map_result);
+
