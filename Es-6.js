@@ -138,6 +138,21 @@ var a = ((...params)=> {
 var b = a(4,5,6,7,8,9);
 console.log(b);
 
+//Destructuring 
+
+var football = {
+    name:'fifa',
+    match:'world cup',
+    time: '9pm',
+    another_match: {
+        names:'fifas',
+        matchs:'world cups',
+        times: '19pm',
+    },
+};
+
+const { another_match: {names:x}, } = football;
+console.log(x);
 
 
 
