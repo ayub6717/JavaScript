@@ -110,6 +110,7 @@ const myObj = {
     dob: "1996",
 };
 
+var property;
 for(property in myObj){
     console.log(property);
 }
@@ -168,5 +169,12 @@ b = 6;
 console.log(a,b);
 
 
+// import and export
+import subtotal,{ sum,total,fever } from "./export.js";
+var res;
+res = sum + total
+console.log("sum is:",res); 
+console.log("subtotal is:",res + subtotal); 
 
-
+var param = fever(4,5,6,7,8,9);
+console.log(param);
