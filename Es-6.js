@@ -189,12 +189,9 @@ console.log(`I have a ${ t + v } dolars only`);
 // Tagged Template Literals
 
 function modify(strings, ...values){
-    console.log("1a");
     const p = strings.reduce((prev, current) => {
-        console.log("1b");
         return prev + current + (values.length ? 'Sweet ' + values.shift() : '')
     },"");
-    console.log("1c");
     return p;
 }
 var g = "rohan";
