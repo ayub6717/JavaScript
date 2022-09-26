@@ -151,8 +151,8 @@ var football = {
     },
 };
 
-const { another_match: {names:x}, } = football;
-console.log(x);
+const { another_match: {names:obj}, } = football;
+console.log(obj);
 
 
 
