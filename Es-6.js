@@ -178,3 +178,10 @@ console.log("subtotal is:",res + subtotal);
 
 var param = fever(4,5,6,7,8,9);
 console.log(param);
+
+// Template Literals
+
+var t = 33;
+var v = 44;
+console.log(`I have a ${ t } dolars and ${ v } founds only`);
+console.log(`I have a ${ t + v } dolars only`);
