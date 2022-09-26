@@ -138,9 +138,9 @@ var a = ((...params)=> {
 var b = a(4,5,6,7,8,9);
 console.log(b);
 
-//Destructuring 
+//Object Destructuring 
 
-var football = {
+const football = {
     name:'fifa',
     match:'world cup',
     time: '9pm',
@@ -154,6 +154,11 @@ var football = {
 const { another_match: {names:obj}, } = football;
 console.log(obj);
 
+
+// Arrary Destructuring 
+var numbers = [1,2,3,4,[200,300],5,6,7,8];
+const [,,,,[y,z]] = numbers;
+console.log(y,z);
 
 
 
