@@ -160,6 +160,13 @@ var numbers = [1,2,3,4,[200,300],5,6,7,8];
 const [,,,,[y,z]] = numbers;
 console.log(y,z);
 
+// Value swap using destructuring
+
+a = 5;
+b = 6;
+[b,a] = [a,b]
+console.log(a,b);
+
 
 
 
